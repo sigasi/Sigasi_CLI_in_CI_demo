@@ -1,9 +1,9 @@
 // Module pixel_testbench implements a first testbench for the design under test.
 
 module pixel_testbench();
-    reg clk;
-    reg rst;
-    reg start;
+    logic clk;
+    reg rst; // @suppress "'logic' should be used instead of 'reg'"
+    reg start; // @suppress "'logic' should be used instead of 'reg'"
 
     logic [11:0] size_x = 40, size_y = 40;
     logic [23:0] count;
