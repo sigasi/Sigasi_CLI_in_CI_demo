@@ -10,6 +10,8 @@ pipeline {
             steps {
                 // Verify project
                 sh "${sigasiCli} verify --warnings-ng -o sigasi-verify.xml ."
+                // Have the job fail if errors are found
+                sh "if grep '<severity>ERROR</severity>' sigasi-verify.xml ; then exit 1; fi"
             }
         }
         
