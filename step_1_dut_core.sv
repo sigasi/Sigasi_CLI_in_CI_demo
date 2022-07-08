@@ -38,7 +38,7 @@ module dut_core(
     // Calculate the X, Y and XY(squared) gradients
     assign gradx = (pixel_mp - pixel_pp) + 2 * (pixel_m0 - pixel_p0) + (pixel_mm - pixel_pm);
     assign grady = (pixel_mp - pixel_mm) + 2 * (pixel_0p - pixel_0m) + (pixel_pp - pixel_pm);
-    assign gradsq = (gradx_r * gradx_r) + (grady_r * grady_r)
+    assign gradsq = (gradx_r * gradx_r) + (grady_r * grady_r);
 
     always @(posedge clock) begin
         gradx_r = gradx;
