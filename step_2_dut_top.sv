@@ -7,7 +7,7 @@ module dut_top(
     input  [7:0] pixel_in, // pixel in (streaming input)
     output [7:0] pixel_out, // pixel out (streaming output)
     output       pixel_valid // indicates that the output pixel is valid
-);
+)
 
     wire [7:0] pixel_pp;
     wire [7:0] pixel_p0;

@@ -15,7 +15,7 @@ begin
 	begin
 		rst   <= '1';
 		start <= '0';
-		wait for 17 ns;
+		wait for 17 ns
 		rst   <= '0';
 		wait for 20 ns;
 		start <= '1';
