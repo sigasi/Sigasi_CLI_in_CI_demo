@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity drive_rst_start is
 	port(
 		rst   : out std_logic;
-		start : out std_logic
+		start : out std_logic;
 	);
 end entity drive_rst_start;
 
