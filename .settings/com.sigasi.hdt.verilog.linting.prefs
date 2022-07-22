@@ -1,4 +1,5 @@
-fileVersion=1
-isEnabled=true
 17/severity//<project>=IGNORE
 18/severity//<project>=IGNORE
+3/severity//<project>=IGNORE
+eclipse.preferences.version=1
+isEnabled=true

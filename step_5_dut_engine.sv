@@ -14,7 +14,7 @@ module dut_engine (
 );
 
     typedef enum {waiting, startup_row1, startup_row2, calculate, finish_row_1, finish_row_2} states_t;
-    states_t state
+    states_t state;
 
     always @(posedge clk) begin
         if (rst == 1'b1)
