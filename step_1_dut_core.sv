@@ -27,7 +27,7 @@ module dut_core(
     input [7:0] pixel_mm,
     input on_edge,
     input clock,
-    input reset);
+    input reset
 
     wire logic signed [15:0] gradx; // X gradient
     wire logic signed [15:0] grady; // Y gradient
