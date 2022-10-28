@@ -1,9 +1,13 @@
 #!groovy
 
-String sigasiCli = '/home/wmeeus/product/sigasi-cli/sigasi-cli'
+String sigasiCli = '/home/wmeeus/product/veresta-current/veresta'
 
 pipeline {
     agent 'any'
+
+    environment {
+        SIGASI_LM_LICENSE_FILE = '27040@elvis'
+    }
 
     stages {
         stage('Build') {
