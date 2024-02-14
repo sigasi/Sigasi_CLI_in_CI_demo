@@ -12,7 +12,7 @@ module pixel_testbench();
     // Feed data into the DUT
     always @(posedge clk) begin
         if (rst == 1'b1) begin
-            feeder_state = IDLE;
+            feeder_state = ID LE;
             pixel_in = 0;
             count = 0;
         end
